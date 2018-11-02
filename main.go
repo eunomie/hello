@@ -8,7 +8,7 @@ import (
 )
 
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello!!!"))
+	w.Write([]byte("Hello World"))
 
 	fmt.Fprintf(w, "\nEnvironment:\n")
 	for _, env := range os.Environ() {
